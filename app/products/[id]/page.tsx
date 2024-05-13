@@ -38,6 +38,7 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
   });
   return (
     <div>
+      {/* IMAGE */}
       <ProductImage product={product} />
 
       <ProductDetails product={product} complementaryProducts={juices} />
