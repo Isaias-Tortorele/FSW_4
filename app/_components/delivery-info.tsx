@@ -17,12 +17,12 @@ const DeliveryInfo = ({ restaurant }: DeliveryInfoProps) => {
             <span className="text-xs">Entrega</span>
             <BikeIcon size={14} />
           </div>
-          {Number(restaurant.deliveryFee) > 0 ? (
-            <p className="text-sm font-semibold">
+          {Number(restaurant.deliveryFee) > 1 ? (
+            <p className="text-xs font-semibold">
               {formatCurrency(Number(restaurant.deliveryFee))}
             </p>
           ) : (
-            <p className="text-sm font-semibold">Grátis</p>
+            <p className="text-xs font-semibold">Grátis</p>
           )}
         </div>
 
