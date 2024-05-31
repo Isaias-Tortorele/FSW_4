@@ -97,7 +97,7 @@ const ProductDetails = ({
             />
           </div>
           <span className="text-sm text-muted-foreground">
-            {product.restaurant.name} 987
+            {product.restaurant.name}
           </span>
         </div>
 
