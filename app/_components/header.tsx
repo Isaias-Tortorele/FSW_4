@@ -94,25 +94,28 @@ const Header = () => {
           </SheetHeader>
 
           <div className="space-y-2">
+            <div className="py-6">
+              <Separator />
+            </div>
+            <Button
+              variant={"ghost"}
+              className="w-full justify-start space-x-3 rounded-full text-xs font-normal"
+            >
+              <HomeIcon size={16} />
+              <span className="block">Início</span>
+            </Button>
+
             {data?.user && (
               <>
-                <div className="py-6">
-                  <Separator />
-                </div>
                 <Button
                   variant={"ghost"}
                   className="w-full justify-start space-x-3 rounded-full text-xs font-normal"
+                  asChild
                 >
-                  <HomeIcon size={16} />
-                  <span className="block">Início</span>
-                </Button>
-
-                <Button
-                  variant={"ghost"}
-                  className="w-full justify-start space-x-3 rounded-full text-xs font-normal"
-                >
-                  <ScrollTextIcon size={16} />
-                  <span className="block">Meus pedidos</span>
+                  <Link href={"/my-orders"}>
+                    <ScrollTextIcon size={16} />
+                    <span className="block">Meus pedidos</span>
+                  </Link>
                 </Button>
 
                 <Button
